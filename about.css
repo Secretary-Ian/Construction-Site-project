@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(250, 243, 242);
+}
+
+.nav-about {
+    background-color: white;
+    color: black;
+}
+
+section:first-child {
+    margin-top: 10%;
+}
+
+section {
+    margin: 5% 5%;
+}
+
+.aboutus img {
+    width: 100%;
+    margin-top: 3%;
+}
+
+section:nth-child(odd) h2 {
+    font-size: 48px;
+    color: orangered;
+}
+
+section:first-child h4 {
+    font-size: 24px;
+    margin-bottom: 1%;
+}
+
+.relations {
+    display: flex;
+    gap: 17%
+}
+
+.relations div {
+    width: 400px;
+}
+
+.relations p {
+    font-size: 16px;
+    margin: 4% 0;
+    line-height: 35px;
+}
+
+/* LEFT OFF ON THIS SECTION. REMEMBER. */
+
+.associates h2 { 
+    font-size: 32px;
+}
+
+.REA {
+    font-size: 20px;
+}
+
+.REA p {
+    margin-bottom: 10%;
+}
+
+.REA h3::before {
+    content: '';
+    display: flex;
+    width: 70px;
+    border-top: solid 1px black;
+    padding-bottom: 5%;
+}
+
+.mission h4 {
+    font-size: 24px;
+}
+
+.mission h2 {
+    margin: 5% 0;
+}
+
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5%;
+    border-bottom: solid 1px black;
+}
+
+.text {
+    width: 400px;
+}
+
+.text p {
+    line-height: 35px;
+}

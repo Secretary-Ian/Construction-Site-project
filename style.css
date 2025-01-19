@@ -1,0 +1,429 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+/* end nav styling i think... 
+wheeewwie 
+llalalaalalalalalalaalala*/
+
+body {    
+    background-color: rgb(250, 243, 242);
+}
+
+video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -900;
+    filter: brightness(0.5);
+}
+
+/* nearly included this in the nav section. bruh. */
+
+h1 {
+    width: 900px;
+    color: white;
+    margin: 350px 0px 0px 8%;
+    font-size: 114px;
+}
+
+header h2 {
+    color: white;
+    font-size: 42px;
+}
+
+h2 {
+    color: orangered;
+}
+
+.builders, .headerbuttons {
+    margin: 40px 0px 0px 8%;
+    display:flex;
+}
+
+.headerbuttons :first-child:hover {
+    transition: 0.5s;
+    background-color: black;
+    color: orangered;
+    border: solid 1px orangered;
+}
+
+.headerbuttons :nth-child(2) {
+    margin-left: 25px;
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+.headerbuttons :nth-child(2):hover {
+    transition: 0.5s;
+    background-color: orangered;
+    border: solid 1px orangered;
+}
+
+.hbuttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: orangered;
+    width: 180px;
+    height: 60px;
+    transition: 0.5s
+}
+
+/* 
+.hbuttons :hover {
+    background-color: black;
+    color:orangered;
+} */
+
+
+
+/*  End of header */
+
+.intro {
+    margin-top: 400px;
+}
+
+.divintro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 8%;
+}
+
+.divintro a {
+    color: black;
+    background-color: orangered;
+    border: solid 1px orangered;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.divintro a:hover {
+    transition: 0.3s;
+    background-color: transparent;
+    border: solid 1px black;
+}
+
+.divintro h2 {
+    font-size: 46px;
+    width: 580px;
+    margin: 20px 0px;
+}
+
+.divintro h4 {
+    font-size: 24px;
+}
+
+.constructions {
+    margin: 150px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.constructions-text {
+    font-size: 24px;
+}
+
+.constructions h3 {
+    margin-bottom: 5%;
+}
+
+.constructions h3::before {
+    content: '';
+    display: flex;
+    border-top: solid 1px black;
+    width: 70px;
+    padding-bottom: 5%;
+}
+
+.constructions-text p {
+    font-size: 16px;    
+    margin: 15px 0px;
+    line-height: 40px;
+    width: 350px;
+}
+
+/* end of constructions,
+beginning of "who we are" */
+
+section {
+    width: 100%;
+    margin-left: 0;
+}
+
+.about {
+    position: relative;
+    padding: 5%;
+}
+
+.section-background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -999;
+    filter: brightness(0.5);
+}
+
+.whoweare h3, .whoweare p, .stats p {
+    color: white;
+    width: 400px;
+    line-height: 32px;
+}
+
+.whoweare h3 {
+    font-size: 24px;
+}
+
+.whoweare h2 {
+    font-size: 42px;
+    margin-bottom: 1%;
+}
+
+.numbers h2 {
+    margin-top: 50px;
+    color: white;
+    font-size: 52px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    /* align-items: center; */
+}
+
+.number-objects p {
+    width:auto;
+    line-height: 40px;
+}
+
+.numbers, .number-objects{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about h4 {
+    color: white;
+    font-size: 24px;
+}
+
+.signature {
+    margin: 12% 0px;
+}
+
+/* END OF "WHO WE ARE" 
+writing more in this comment
+so that i can see in the side scroll */
+
+.ourservices {
+    margin: 2% 0%;
+    padding: 0% 5%;
+}
+
+.ourservices h2 {
+    font-size: 46px;
+    width: 650px;
+}
+
+.ourservices h4 {
+    font-size: 24px;
+}
+
+.ourservices-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourservices-header h2 {
+    margin: 4% 0%;
+}
+
+.ourservices-header p {
+    width: 560px;
+    line-height: 32px;
+}
+
+.ourservices-header a {
+    color: black;
+    background-color: orangered;
+    border: solid 1px orangered;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.ourservices-header a:hover {
+    transition: 0.3s;
+    background-color: transparent;
+    border: solid 1px black;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0%;
+}
+
+.row1 {
+    display: flex;
+    justify-content: end;
+    gap: 1%;
+    margin-bottom: 1%
+}
+
+.row2 {
+    display: flex;
+    gap: 1%;
+    justify-content: start;
+}
+
+.block {
+    width: 329px;
+    height: 249px;
+    background-color: white;
+    padding: 3%;
+}
+
+.block h3 {
+    font-size: 24px;
+    width: 150px;
+}
+
+.block-svg {
+    width: 65px;
+    height: 80px;
+}
+
+/* END OF SECTION:
+OUR SERVICES. BYE BYE */
+
+.endclients {
+    padding: 0 5%;
+}
+
+.endclients h2 {
+    font-size: 46px;
+    width: 650px;
+    margin: 1% 0%;
+}
+
+.endclients h4 {
+    font-size: 24px;
+}
+
+.endclients p {
+    width: 500px;
+    line-height: 32px;
+}
+
+.clients h4, .clients h2{
+    text-align: center;
+}
+
+.examples img {
+    height:584px;
+}
+
+.examples {
+    display: flex;
+    gap: 0.5%;
+    justify-content: center;
+    margin: 5% 0%;
+}
+
+.examples a:hover {
+    transition: 0.5;
+    filter:brightness(0.5);
+}
+
+.ex1, .ex2, .ex3 {
+    position: relative;
+}
+
+.ex1:hover::before {
+    content: 'West Ridge Hill Interchange';
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    left: 25%;
+    right: 25%;
+    color: white;
+    font-size: 28px;
+    text-align:center;
+}
+
+.ex2:hover::before {
+    content: 'Halston Parkway';
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    left: 25%;
+    right: 25%;
+    color: white;
+    font-size: 28px;
+    text-align:center;
+}
+
+.ex3:hover::before {
+    content: 'Great Hill New Campus';
+    color: white;
+    position: absolute;
+    top: 45%;
+    bottom: 45%;
+    left: 25%;
+    right: 25%;
+    font-size: 28px;
+    text-align:center;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px black;
+}
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 2% 0;
+    padding: 2% 0;
+}
+
+.logos1, .logos2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20%;
+    margin: 3% 0;
+}
+
+.logos2 {
+    gap: 24%;
+}
+
+/* END OF CLIENTS SECTION
+Time to do the footer styling in a separate file */
