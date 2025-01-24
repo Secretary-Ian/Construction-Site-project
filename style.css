@@ -28,7 +28,7 @@ video {
 h1 {
     width: 900px;
     color: white;
-    margin: 350px 0px 0px 8%;
+    margin: 10% 0px 0px 8%;
     font-size: 114px;
 }
 
@@ -426,4 +426,12 @@ OUR SERVICES. BYE BYE */
 }
 
 /* END OF CLIENTS SECTION
-Time to do the footer styling in a separate file */
+Time to do the footer styling in a separate file 
+and now, here we shall attempt the responsive...*/
+
+@media screen and (max-width: 500px){
+    section {
+        max-width: 390px;
+        margin: auto;
+    }
+}

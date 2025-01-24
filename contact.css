@@ -41,6 +41,7 @@ section {
 .formarea {
     display: flex;
     width: 400px;
+    flex-wrap: wrap;
 }
 
 /* 
@@ -53,11 +54,13 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 6%;
+    /* flex-wrap: wrap; */
 }
 
 .inputrows {
     display: flex;
     gap: 35px;
+    /* flex-wrap: wrap; */
 }
 
 #textarea {
