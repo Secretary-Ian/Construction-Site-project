@@ -106,33 +106,109 @@ a {
 }
 
 /* and now this is the responsive
-section. need burger menu first... but
- all i have to do is hide the nav */
+section. need burger menu first... first
+i have to hide the nav */
 
 @media screen and (max-width:1920px) {
-    .responsivenav .navlist {
+    .responsiveNav {
         display: none;
     }
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:400px) {
 
-    .navlist {
+    #nav {
         display: none;
     }
 
-    /* .responsivenav .navlist {
+    .responsiveNav .burgerlist {
+        display: none;
+    }
+
+    .responsiveNav {
         display: flex;
-    } */
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .burger:hover {
+        cursor: pointer;
+    }
 
     .MCRbutton {
-        margin-right: 50%;
+        margin-right: 30%;
+        margin-top: 5%;
+    }
+
+    header {
+        position: relative;
     }
 
     video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
         width: 100%;
         height: 600px;
+        margin: 0 auto;
+    }
+
+    /* the stupid height thing didn't
+    work until i used object fit. just barely
+    good god */
+
+    img {
+        max-width: 390px;
+        margin: auto;
+    }
+
+    /* burger menu */
+
+    .burgerlist a {
+        color: black
+    };
+
+    .burgerlist {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .burgerlist ul {
+        list-style: none;
+        border: none;
+        font-size: 26px;
+        margin-top: 50%;
+    }
+
+    .burgerlist li {
+        margin: 50% 0;
+    }
+
+    .burger {
+        position: absolute;
+        top: 40px;
+        right: 25px;
+    }
+
+}
+
+/* END IPHONE RESPONSIVE */
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    
+    nav {
+        flex-direction: column;
+        gap: 40px;
+        width: auto;
+    }
+
+    video {
+        object-fit: cover;
+        height: 900px
     }
 
 }

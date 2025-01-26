@@ -76,14 +76,6 @@ h2 {
     transition: 0.5s
 }
 
-/* 
-.hbuttons :hover {
-    background-color: black;
-    color:orangered;
-} */
-
-
-
 /*  End of header */
 
 .intro {
@@ -429,9 +421,214 @@ OUR SERVICES. BYE BYE */
 Time to do the footer styling in a separate file 
 and now, here we shall attempt the responsive...*/
 
-@media screen and (max-width: 500px){
-    section {
-        max-width: 390px;
+@media screen and (max-width: 400px){
+    
+    header h1 { 
+        font-size: 42px;
+        width: 350px;
+    }
+
+    section, section h2, section h4 {
+        max-width: 380px;
         margin: auto;
     }
+
+    p {
+        width: auto ;
+    }
+    
+    header a {
+        max-width: 150px;
+    }
+
+    .intro img {
+        width: auto;
+    }
+    
+    img {
+        margin:0;
+    }
+
+    .divintro h2 {
+        font-size: 42px;
+        width: 280px;
+    }
+
+    .divintro {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .constructions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .constructions h3 {
+        margin-top: 5%;
+    }
+
+    .stats {
+        width: 380px;
+        flex-wrap: column wrap;
+        font-size: 16px;
+    }
+
+    .whoweare img {
+        object-fit: cover;
+        width: 100%;
+        height: 800px;
+        margin: auto;
+    }
+
+    .about p {
+        width: 350px;
+    }
+
+    .about h3 {
+        font-size: 24px;
+        padding-top: 20%;
+    }
+    .about h2 {
+        font-size: 32px;
+    }
+    
+    .stats {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .numbers{
+        flex-direction: column;
+    }
+
+    .number-objects {
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 13%;
+    }
+
+    .ourservices-header {
+        flex-direction: column;
+        margin: 50% 0 25% 0;
+    }
+
+    .ourservices-header p, .ourservices-header h4, .ourservices-header h2 {
+        width: 350px;
+        margin: 2%;
+    }
+    
+    .ourservices .row1, .ourservices .row2 {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ourservices .blocks {
+        gap: 10px;
+    }
+    
+    .row1 .block, .row2 .block {
+        height: 150px;
+        width: 100%;
+    }
+
+    .row1 h3, .row2 h3 {
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .endclients {
+        margin: 15% 0;
+    }
+
+    .endclients p {
+        width: 350px;
+    }
+
+    .examples {
+        max-width: 380px;
+    }
+
+    .examples img {
+        object-fit: fill;
+        width: 150px;
+        height: 200px
+    }
+
+    .clients h2 {
+        font-size: 32px;
+        width: 280px;
+    }
+
+    .brands {
+        max-width: 380px;
+        flex-direction: row;
+        gap: 20%
+    }
+
+    .brands img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .logos1, .logos2 {
+        flex-direction: column;
+    }
+
+
+}
+
+/* END PHONE RESPONSIVE */
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+
+    header h1 {
+        font-size: 68px;
+        width: 600px;
+    }
+
+    section h2, section h4 {
+        max-width: 600px;
+        margin: 0;
+    }
+
+    section {
+        margin: auto;
+    }
+    .constructions img {
+        width: 400px
+    }
+
+    .whoweare {
+        max-width: 1024px;
+        flex-wrap: wrap;
+    }
+
+    .whoweare img {
+        object-fit: cover;
+        height: 800px
+    }
+
+    .whoweare h3 {
+    margin-top: 7%;
+    }
+
+    .numbers, .number-objects {
+        max-width: 700px;
+    }
+
+    .blocks .row1, .blocks .row2 {
+        justify-content: center;
+    }
+
+    .examples img { 
+        width: 350px;
+        height: 250px;
+    }
+
+    .brands img {
+        width: 70px;
+    }
+
 }

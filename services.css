@@ -50,3 +50,51 @@ section {
     width: 400px;
     margin: 8% 0;
 }
+
+@media screen and (max-width:400px) {
+
+    section {
+        max-width: 380px;
+        margin: 0;
+    }
+
+    .burger svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .top h2 {
+        font-size: 32px;
+        width: 280px;
+    }
+
+    .block {
+        flex-direction: column;
+        width: 380px;
+        margin: 5% 0;
+    }
+
+    .block p {
+        width: 350px;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+}
+
+/* END PHONE RESPONSIVE */
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+ 
+    section img {
+        width: 450px;
+        margin: auto;
+    }
+
+    .block p {
+        align-items: start;
+        width: 250px;
+    }
+}

@@ -101,3 +101,31 @@ input {
 img {
     margin-left: 80%;
 }
+
+@media screen and (max-width:400px) {
+    
+    .inputrows {
+        flex-direction: column;
+    }
+
+    input {
+        width: 345px;
+    }
+
+    .formarea img {
+        margin: 15% 0;
+        width: 345px;
+    }
+
+}
+
+/* END PHONE RESPONSIVE */
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    
+    .formarea img {
+        margin: 15% 0;
+        width: 685px;
+    }
+
+}

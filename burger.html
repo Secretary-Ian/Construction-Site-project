@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+
+    <style>
+
+        body {
+            opacity: 0;
+            animation: fadeIn 1s forwards;    
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="burgerlist">
+        <div class="listandbutton">
+            <ul class="list">
+               <li> <a href="services.html" target="_self"><div class="nav-services">Services</div> </a> </li>
+               <li> <a href="projects.html" target="_self"><div class="nav-projects">Projects</div> </a> </li>
+               <li> <a href="about.html" target="_self"><div class="nav-about">About Us</div> </a> </li>
+                <li> <a href="careers.html" target="_self"><div class="nav-careers">Careers</div> </a> </li>
+                <li> <a href="contact.html" target="_self"><div class="nav-contact">Contact</div> </a> </li>
+            </ul>
+
+            <a href="javascript:history.go(-1)">
+               <div class="burger">
+                    <svg class="B1" viewBox="0 0 100 80" width="40" height="40" style="fill: orangered">
+                        <rect width="100" height="10" rx="10"></rect>
+                         <rect y="30" width="100" height="10" rx="10"></rect>
+                         <rect y="60" width="100" height="10" rx="10"></rect>
+                     </svg>
+               </div>
+            </a>
+        </div>
+
+        <div>
+            <a href="" class="callnow">Call Now!</a>
+        </div>
+    </div>
+
+</body>
+</html>

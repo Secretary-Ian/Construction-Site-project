@@ -66,7 +66,10 @@ section h2 {
 .card a {
     border: solid 1px orangered;
     text-decoration: none;
-    margin-left: 14%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
     padding: 20px 50px;
     transition: 0.5s;
@@ -86,4 +89,56 @@ section h2 {
     display: flex;
     flex-direction: row;
     justify-content: end;
+}
+
+@media screen and (max-width:400px) {
+    
+    section h2 {
+        font-size: 32px;
+        width: 280px;
+    }
+
+    .row1, .row2 {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 300px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 16px;
+    }
+
+    .card a {
+        width: 200px;
+        height: 50px;
+    }
+
+}
+
+/* END PHONE RESPONSIVE */
+
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    .row1, .row2 {
+        justify-content: center;
+    }
+
+    .cards h3 {
+        font-size: 20px;
+    }
+
+    .cards h3, .cards p {
+        width: 250px;
+        margin: 5%;
+    }
+
+    .cards h3 {
+        width: 200px;
+    }
 }

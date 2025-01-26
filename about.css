@@ -90,3 +90,51 @@ section:first-child h4 {
 .text p {
     line-height: 35px;
 }
+
+@media screen and (max-width:400px) {
+
+    .relations, .mission {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .relations p, .relations h2, .relations h3, .mission h4, .mission h2, .mission p {
+        width: 350px;
+        margin: 5%;
+    }
+
+    .mission {
+        width: 390px;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    img {
+        object-fit: cover;
+        margin: 0;
+    }
+}
+
+/* END PHONE RESPONSIVE */
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+    
+    .mission {
+        flex-direction: column;
+        align-items: start;
+        margin: auto;
+    }
+
+    .mission p, .mission h2, .mission h4 {
+        width: 750px;
+        margin: 0 3%;
+    }
+    
+    .mission img {
+        object-fit: cover;
+        width: 768px;
+    }
+
+}
